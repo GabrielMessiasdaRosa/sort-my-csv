@@ -2,7 +2,7 @@
 
 ### if you have snap support on your system, you can install it from snap store
 
-<iframe src="https://snapcraft.io/sort-my-csv/embedded?button=black" frameborder="0" width="100%" height="370px" style="border: 1px solid #CCC; border-radius: 2px;"></iframe>
+<iframe src="https://snapcraft.io/sort-my-csv/embedded?button=white&channels=true" frameborder="0" width="100%" height="390px" style="border: 1px solid #CCC; border-radius: 2px;"></iframe>
 
 ### otherwise you can download the binary from [here](https://raw.githubusercontent.com/GabrielMessiasdaRosa/sort-my-csv/master/bin/sort-my-csv)
 
