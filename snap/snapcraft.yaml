@@ -1,0 +1,25 @@
+name: sort-my-csv
+version: 1.0.0
+summary: It was created by Gabriel Messias da Rosa from Brazil.
+description: null.
+grade: stable
+base: core20
+architectures:
+  - build-on: [arm64, amd64]
+
+confinement: strict
+
+apps:
+  sort-my-csv:
+    command: sort-my-csv
+    plugs:
+      - home
+
+parts:
+  sort-my-csv:
+    plugin: go
+    source-type: git
+    source: https://github.com/GabrielMessiasdaRosa/sort-my-csv
+    override-build: |
+      snapcraftctl build
+      cp $SNAPCRAFT_PART_INSTALL/bin/* $SNAPCRAFT_PART_INSTALL/sort-my-csv
